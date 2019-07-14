@@ -1,0 +1,325 @@
+<com.example.rui.mystock.widget.StickyNestedScrollLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp"
+    android:background="@color/main_bg">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent" android:orientation="vertical"  tools:context=".MainActivity">
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="日期"
+            android:textColor="@color/main_text_color"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/main_bg_grey">
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/main_bg_orange"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/main_text_color"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="主要股指指数"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/sh_layout"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+                android:background="@drawable/text_row_bg"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/stock_sh_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stock_sh_name"
+                    android:textColor="@color/main_text_color"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stock_sh_index"
+                    android:layout_marginTop="2dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/main_text_color"
+                    android:id="@+id/stock_sh_change"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sz_layout"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+                android:background="@drawable/text_row_bg"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/stock_sz_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stock_sz_name"
+                    android:textColor="@color/main_text_color"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stock_sz_index"
+                    android:layout_marginTop="2dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/main_text_color"
+                    android:id="@+id/stock_sz_change"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chuang_layout"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_row_bg"
+                android:orientation="vertical"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/stock_chuang_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stock_chuang_name"
+                    android:textColor="@color/main_text_color"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stock_chuang_index"
+                    android:layout_marginTop="2dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/main_text_color"
+                    android:id="@+id/stock_chuang_change"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/sh50_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_row_bg"
+                android:orientation="vertical"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/stock_sh50_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stock_sh50_name"
+                    android:textColor="@color/main_text_color"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stock_sh50_index"
+                    android:layout_marginTop="2dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/main_text_color"
+                    android:id="@+id/stock_sh50_change"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sh300_layout"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_row_bg"
+                android:orientation="vertical"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/stock_sh300_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stock_sh300_name"
+                    android:textColor="@color/main_text_color"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stock_sh300_index"
+                    android:layout_marginTop="2dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/main_text_color"
+                    android:id="@+id/stock_sh300_change"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/zx_layout"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/text_row_bg"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/stock_zx_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stock_zx_name"
+                    android:textColor="@color/main_text_color"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stock_zx_index"
+                    android:layout_marginTop="2dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/main_text_color"
+                    android:id="@+id/stock_zx_change"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/hk_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_row_bg"
+                android:orientation="vertical"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/stock_hk_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stock_hk_name"
+                    android:textColor="@color/main_text_color"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stock_hk_index"
+                    android:layout_marginTop="2dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/main_text_color"
+                    android:id="@+id/stock_hk_change"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dqs_layout"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+                android:background="@drawable/text_row_bg"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/stock_dqs_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stock_dqs_name"
+                    android:textColor="@color/main_text_color"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stock_dqs_index"
+                    android:layout_marginTop="2dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/main_text_color"
+                    android:id="@+id/stock_dqs_change"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nsdq_layout"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_row_bg"
+                android:orientation="vertical"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/stock_nsdk_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stock_nsdk_name"
+                    android:textColor="@color/main_text_color"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stock_nsdk_index"
+                    android:layout_marginTop="2dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/main_text_color"
+                    android:id="@+id/stock_nsdk_change"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="15dp">
+    </android.support.v7.widget.RecyclerView>
+</com.example.rui.mystock.widget.StickyNestedScrollLayout>

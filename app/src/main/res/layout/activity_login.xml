@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@color/main_bg"
+    tools:context=".activity.LoginActivity">
+
+    <Spinner
+        android:id="@+id/spinner_name"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入手机号"
+        android:textColor="@color/main_text_color"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/main_bg_grey"/>
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="请输入密码"
+        android:textColor="@color/main_text_color"
+        android:textColorHint="@color/main_bg_grey"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:textColor="@color/main_text_color"
+        android:textSize="17sp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_btn_red_selector"/>
+</LinearLayout>

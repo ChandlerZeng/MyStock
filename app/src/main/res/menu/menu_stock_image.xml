@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_search" android:title="@string/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:orderInCategory="100" app:showAsAction="always" />
+    <item android:id="@+id/action_mink" android:title="@string/action_min_k"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_dailyk" android:title="@string/action_daily_k"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_weeklyk" android:title="@string/action_weekly_k"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_monthlyk" android:title="@string/action_monthly_k"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>

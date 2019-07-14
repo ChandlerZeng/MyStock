@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_bg">#3B3B3B</color>
+    <color name="main_bg_light_light">#4a4a4a</color>
+    <color name="main_bg_grey">#5f5f5f</color>
+    <color name="main_bg_orange">#CD6600</color>
+    <color name="main_bg_orange_light">#AA6600</color>
+    <color name="main_bg_light">#A9A9A9</color>
+    <color name="main_bg_dark">#000000</color>
+    <color name="main_bg_black_light">#222222</color>
+    <color name="main_text_color">#EAEAEA</color>
+    <color name="main_red_color">#FF3030</color>
+    <color name="main_red_color_light">#FF5050</color>
+    <color name="main_green_color">#32CD32</color>
+    <color name="main_blue_color">#1E90FF</color>
+    <color name="main_blue_color_light">#2FA0FF</color>
+    <color name="_e1e4e9">#e1e4e9</color>
+    <color name="_abb2bd">#abb2bd</color>
+</resources>

@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        applicationId "com.example.rui.mystock"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation files('lib/pinyin4j-2.5.0.jar')
+    implementation project(':LRecyclerview_library')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.mcxiaoke.volley:library:1.0.19'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'cn.bingoogolapple:bga-swipebacklayout:1.2.0@aar'
+    implementation 'com.android.support:recyclerview-v7:28+'
+    implementation 'com.timehop.stickyheadersrecyclerview:library:[0.4.3]@aar'
+    implementation 'com.huxq17.xrefreshview:xrefreshview:3.6.9'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.android.support:design:28.0.0'
+}

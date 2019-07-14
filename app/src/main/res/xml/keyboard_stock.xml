@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="0.5dp"
+    android:keyHeight="43dp"
+    android:keyWidth="96.8254%p"
+    android:verticalGap="0.5dp">
+    <Row>
+        <Key
+            android:codes="-15"
+            android:keyEdgeFlags="left"
+            android:keyLabel="600" />
+    </Row>
+    <Row>
+        <Key
+            android:codes="-16"
+            android:keyEdgeFlags="left"
+            android:keyLabel="601" />
+    </Row>
+    <Row>
+        <Key
+            android:codes="-17"
+            android:keyEdgeFlags="left"
+            android:keyLabel="000" />
+    </Row>
+    <Row>
+        <Key
+            android:codes="-18"
+            android:keyEdgeFlags="left"
+            android:keyLabel="002" />
+    </Row>
+    <Row>
+        <Key
+            android:codes="-19"
+            android:keyEdgeFlags="left"
+            android:keyLabel="300" />
+    </Row>
+</Keyboard>

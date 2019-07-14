@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Mystock</string>
+    <string name="main_page">首页</string>
+    <string name="main_my">我的</string>
+
+    // Localized
+    <string name="action_settings">设置</string>
+    <string name="action_delete">删除</string>
+    <string name="action_create">生成数据</string>
+    <string name="action_search">搜索</string>
+    <string name="action_refresh">刷新</string>
+    <string name="action_min_k">分时</string>
+    <string name="action_daily_k">日K</string>
+    <string name="action_monthly_k">月K</string>
+    <string name="action_weekly_k">周K</string>
+    <string name="button_add_label">添加</string>
+    <string name="stock_name_title">名称</string>
+    <string name="stock_now_title">最新</string>
+    <string name="stock_increase_percent_title">涨幅</string>
+    <string name="stock_increase_title">涨跌</string>
+    <string name="stock_sh_name">上证指数</string>
+    <string name="stock_sz_name">深圳成指</string>
+    <string name="stock_chuang_name">创业板指</string>
+    <string name="stock_hk_name">恒生指数</string>
+    <string name="stock_dqs_name">道琼斯指数</string>
+    <string name="stock_nsdk_name">纳斯达克</string>
+    <string name="stock_dqsoy_name">道琼斯欧元指数</string>
+    <string name="stock_fs100_name">富时100指数</string>
+    <string name="stock_rj225_name">日经225指数</string>
+    <string name="stock_sh50_name">上证50指数</string>
+    <string name="stock_sh300_name">沪深300指数</string>
+    <string name="stock_zx_name">中证500</string>
+    <string name="stock_buy">买</string>
+    <string name="stock_sell">卖</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--drawable宽高-->
+    <attr name="drawableLeftWidth" format="dimension" />
+    <attr name="drawableTopWidth" format="dimension" />
+    <attr name="drawableRightWidth" format="dimension" />
+    <attr name="drawableLeftHeight" format="dimension" />
+    <attr name="drawableTopHeight" format="dimension" />
+    <attr name="drawableRightHeight" format="dimension" />
+    <attr name="drawableBottomHeight" format="dimension" />
+    <attr name="drawableBottomWidth" format="dimension" />
+    <attr name="deleteIconWidth" format="dimension"/>
+    <attr name="deleteIconHeight" format="dimension"/>
+    <!--是否显示删除按钮-->
+    <attr name="showDeleteIcon" format="boolean"/>
+    <!--drawable居中对齐-->
+    <attr name="isAliganCenter" format="boolean" />
+    <!--带有自定义键盘的edittext-->
+    <declare-styleable name="KeyboardEditText">
+        <attr name="keyboardType" format="enum">
+            <enum name="KEYBOARD_TYPE_NUMBER" value="1" />
+            <enum name="KEYBOARD_TYPE_NUMBER_ALL" value="2" />
+            <enum name="KEYBOARD_TYPE_DECIMAL" value="3" />
+            <enum name="KEYBOARD_TYPE_STOCK_CODE" value="4" />
+            <enum name="KEYBOARD_TYPE_STOCK_AMOUNT" value="5" />
+            <enum name="KEYBOARD_TYPE_QWER" value="6" />
+        </attr>
+    </declare-styleable>
+    <!--下行注册数字键盘-->
+    <declare-styleable name="MultiKeyboardView">
+        <attr name="labelTextSize" format="dimension" />
+        <attr name="specialLabelTextSize" format="dimension" />
+        <attr name="keyboardViewType" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="EditTextWidthDeleteIcon">
+        <attr name="drawableLeftWidth" />
+        <attr name="drawableTopWidth" />
+        <attr name="drawableRightWidth" />
+        <attr name="drawableLeftHeight" />
+        <attr name="drawableTopHeight" />
+        <attr name="drawableRightHeight" />
+        <attr name="drawableBottomHeight" />
+        <attr name="drawableBottomWidth" />
+        <attr name="isAliganCenter" />
+        <attr name="showDeleteIcon"/>
+        <attr name="deleteIconWidth" />
+        <attr name="deleteIconHeight"/>
+    </declare-styleable>
+</resources>

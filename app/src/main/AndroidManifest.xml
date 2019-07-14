@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rui.mystock">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.StartingWindowTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".StockImgActivity" />
+        <activity
+            android:name=".SerachActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".activity.Main2Activity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:configChanges="orientation|keyboardHidden"
+                    android:label="@string/app_name"
+                    android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ExchangeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".activity.BuySearchActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".activity.LoginActivity"></activity>
+    </application>
+
+</manifest>

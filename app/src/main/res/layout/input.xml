@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--股票数量键盘-->
+    <LinearLayout
+        android:id="@+id/rl_keyboard_stock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <!--股票代码-->
+        <com.example.rui.mystock.keyboard.MultiKeyboardView
+            android:id="@+id/keyboard_stock_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/top_text_row_bg"
+            android:keyBackground="@drawable/text_row_bg"
+            android:keyTextColor="@color/main_text_color"
+            android:paddingTop="0.5dp"
+            android:shadowRadius="0.0"
+            app:labelTextSize="19sp"
+            app:specialLabelTextSize="19sp" />
+        <!-- 普通数字键盘样式 -->
+        <com.example.rui.mystock.keyboard.MultiKeyboardView
+            android:id="@+id/keyboard_stock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/text_row_bg"
+            android:keyBackground="@drawable/top_text_row_bg"
+            android:keyTextColor="@color/main_text_color"
+            android:paddingTop="0.5dp"
+            android:shadowRadius="0.0"
+            app:labelTextSize="24sp"
+            app:specialLabelTextSize="19sp" />
+    </LinearLayout>
+
+    <!-- 字母键盘样式 -->
+    <com.example.rui.mystock.keyboard.MultiKeyboardView
+        android:id="@+id/keyboard_qwer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_text_row_bg"
+        android:keyBackground="@drawable/text_row_bg"
+        android:keyTextColor="@color/main_text_color"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        android:shadowRadius="0.0"
+        android:visibility="gone"
+        app:labelTextSize="24sp"
+        app:keyboardViewType="1"
+        app:specialLabelTextSize="16sp" />
+    <!--普通数字键盘-->
+    <com.example.rui.mystock.keyboard.MultiKeyboardView
+        android:id="@+id/keyboard_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_row_bg"
+        android:keyBackground="@drawable/top_text_row_bg"
+        android:keyTextColor="@color/main_text_color"
+        android:paddingTop="0.5dp"
+        android:shadowRadius="0.0"
+        android:visibility="gone"
+        app:labelTextSize="24sp"
+        app:specialLabelTextSize="19sp" />
+</merge>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="@color/main_bg_grey"
+    android:orientation="vertical">
+    <TextView
+        android:textColor="@color/main_text_color"
+        android:id="@+id/tv_top"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/top_text_row_bg"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="置顶股票"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_bg"/>
+    <TextView
+        android:textColor="@color/main_text_color"
+        android:id="@+id/tv_delete"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:background="@drawable/top_text_row_bg"
+        android:text="取消自选"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_bg"
+    tools:context=".SerachActivity">
+
+    <com.example.rui.mystock.keyboard.KeyboardEditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入股票代码"
+        android:textColor="@color/main_text_color"
+        android:layout_margin="5dp"
+        android:paddingLeft="5dp"
+        android:textSize="16sp"
+        app:keyboardType="KEYBOARD_TYPE_NUMBER_ALL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/main_green_color"
+        android:layout_margin="5dp"
+        android:layout_height="1dp"/>
+
+    <include layout="@layout/search_item_header"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <com.github.jdsjlzx.recyclerview.LuRecyclerView
+            android:id="@+id/lrecycle_view"
+            android:paddingVertical="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+        </com.github.jdsjlzx.recyclerview.LuRecyclerView>
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progress_bar"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+</LinearLayout>
