@@ -14,8 +14,7 @@
         android:background="@color/main_bg"
         android:fillViewport="true"
         app:tabBackground="@android:color/transparent"
-        app:tabMode="scrollable"
-        app:layout_scrollFlags="scroll"
+        app:tabMode="fixed"
         app:tabIndicatorColor="@color/main_bg_orange"
         app:tabIndicatorHeight="2.0dp"
         app:tabSelectedTextColor="@color/main_bg_orange"
@@ -35,16 +34,11 @@
         <android.support.design.widget.TabItem
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="撤单" />
-
-        <android.support.design.widget.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
             android:text="持仓" />
         <android.support.design.widget.TabItem
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="查询" />
+            android:text="历史" />
 
     </android.support.design.widget.TabLayout>
     <View

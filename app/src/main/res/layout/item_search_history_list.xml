@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/top_text_row_bg"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/my_operate_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_history_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="历史搜索记录"
+            android:textColor="@color/main_text_color"/>
+        <View android:layout_height="match_parent"
+            android:layout_width="1dp"
+            android:background="@color/main_bg"/>
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:gravity="center"
+            android:src="@android:drawable/ic_menu_delete"
+            android:textColor="@color/main_text_color"/>
+    </LinearLayout>
+</LinearLayout>

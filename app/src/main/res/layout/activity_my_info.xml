@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/my_head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_row_bg"
+        android:orientation="horizontal"
+        android:focusableInTouchMode="true">
+
+        <com.chandler.red.mystock.widget.CircleImageView
+            android:id="@+id/my_photo"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_change_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_toRightOf="@id/my_photo"
+            android:padding="8dp"
+            android:text="本地头像"
+            android:background="@drawable/selector_btn_background"
+            android:textColor="@color/main_text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_change_net_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_toRightOf="@id/my_photo"
+            android:padding="8dp"
+            android:text="网络头像"
+            android:background="@drawable/selector_btn_background"
+            android:textColor="@color/main_text_color"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/main_bg_grey" />
+
+    <LinearLayout
+        android:id="@+id/my_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_row_bg"
+        android:orientation="horizontal"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/my_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="名称"
+            android:textColor="@color/main_text_color"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="8dp"
+            android:textColor="@color/main_text_color"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/my_phone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_row_bg"
+        android:orientation="horizontal"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/my_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="电话"
+            android:textColor="@color/main_text_color"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="8dp"
+            android:textColor="@color/main_text_color"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出登陆"
+        android:textColor="@color/main_text_color"
+        android:textSize="17sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/shape_btn_red_selector"/>
+
+</LinearLayout>

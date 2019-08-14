@@ -6,6 +6,7 @@
 <LinearLayout
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:paddingBottom="5dp"
     android:layout_height="wrap_content">
     <RelativeLayout
         android:id="@+id/my_head_layout"
@@ -15,12 +16,11 @@
         android:clickable="true"
         android:focusableInTouchMode="true"
         android:orientation="horizontal">
-        <com.example.rui.mystock.widget.CircleImageView
+        <com.chandler.red.mystock.widget.CircleImageView
             android:id="@+id/my_photo"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_margin="10dp"
-            android:src="@mipmap/huiqaio"/>
+            android:layout_margin="10dp" />
         <TextView
         android:id="@+id/my_name"
         android:layout_width="wrap_content"
@@ -73,7 +73,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/my_all_money"
-            android:layout_marginBottom="10dp"
             android:layout_marginLeft="15dp"
             android:text="---"
             android:textSize="16sp"
@@ -93,7 +92,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/my_all_profit"
-                android:layout_marginBottom="10dp"
                 android:layout_alignLeft="@+id/my_all_profit"
                 android:text="---"
                 android:textSize="16sp"
@@ -143,7 +141,7 @@
     </RelativeLayout>
         <View
             android:layout_width="match_parent"
-            android:layout_height="15dp"
+            android:layout_height="1dp"
             android:background="@color/main_bg_black_light"/>
     <LinearLayout
         android:id="@+id/my_operate_layout"
@@ -158,6 +156,7 @@
             android:padding="15dp"
             android:textSize="18sp"
             android:clickable="true"
+            android:gravity="center"
             android:background="@drawable/text_row_bg"
             android:text="买入"
             android:textColor="@color/main_text_color"/>
@@ -168,26 +167,17 @@
             android:layout_weight="1"
             android:padding="15dp"
             android:textSize="18sp"
+            android:gravity="center"
             android:clickable="true"
             android:background="@drawable/text_row_bg"
             android:text="卖出"
-            android:textColor="@color/main_text_color"/>
-        <TextView
-            android:id="@+id/my_cancel"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="15dp"
-            android:textSize="18sp"
-            android:clickable="true"
-            android:background="@drawable/text_row_bg"
-            android:text="撤单"
             android:textColor="@color/main_text_color"/>
         <TextView
             android:id="@+id/my_owner"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center"
             android:padding="15dp"
             android:textSize="18sp"
             android:clickable="true"
@@ -195,15 +185,16 @@
             android:text="持仓"
             android:textColor="@color/main_text_color"/>
         <TextView
-            android:id="@+id/my_search"
+            android:id="@+id/my_history"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="15dp"
             android:textSize="18sp"
             android:clickable="true"
+            android:gravity="center"
             android:background="@drawable/text_row_bg"
-            android:text="查询"
+            android:text="历史"
             android:textColor="@color/main_text_color"/>
     </LinearLayout>
     <View
@@ -218,32 +209,285 @@
         android:focusableInTouchMode="true"
         android:orientation="vertical"
         android:background="@drawable/text_row_bg">
-        <TextView
-            android:id="@+id/my_month_title"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="15dp"
-            android:textSize="18sp"
-            android:text="**月参考盈亏"
-            android:textColor="@color/main_text_color"/>
-        <TextView
-            android:id="@+id/my_month_profit"
-            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/my_month_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="18sp"
+                android:text="**"
+                android:textColor="@color/main_blue_color"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:text=" 月参考盈亏 "
+                android:textColor="@color/main_text_color"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:textSize="16sp"
-            android:text="---"
-            android:textColor="@color/main_text_color"/>
-        <TextView
-            android:id="@+id/my_month_vs"
-            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/my_month_profit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="16sp"
+                android:text="---"
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text=" ,收益率 "
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:id="@+id/my_month_profit_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="---"
+                android:textColor="@color/main_text_color"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:textSize="13sp"
-            android:layout_marginBottom="15dp"
-            android:text="收益率---，跑赢上证指数---"
-            android:textColor="@color/main_text_color"/>
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="14sp"
+                android:text="上证指数收益率 "
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:id="@+id/my_month_vs_sh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="---"
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="，跑赢该指数 "
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:id="@+id/my_month_vs_sh_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="---"
+                android:textColor="@color/main_text_color"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="14sp"
+                android:text="深证成指收益率 "
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:id="@+id/my_month_vs_sz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="---"
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="，跑赢该指数 "
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:id="@+id/my_month_vs_sz_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="---"
+                android:textColor="@color/main_text_color"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="14sp"
+                android:text="上证50收益率     "
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:id="@+id/my_month_vs_sh50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="---"
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="，跑赢该指数 "
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:id="@+id/my_month_vs_sh50_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="---"
+                android:textColor="@color/main_text_color"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="14sp"
+                android:text="中证500收益率  "
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:id="@+id/my_month_vs_zx500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="---"
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="，跑赢该指数 "
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:id="@+id/my_month_vs_zx500_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="---"
+                android:textColor="@color/main_text_color"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="14sp"
+                android:text="恒生指数收益率 "
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:id="@+id/my_month_vs_hk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="---"
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="，跑赢该指数 "
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:id="@+id/my_month_vs_hk_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="---"
+                android:textColor="@color/main_text_color"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="14sp"
+                android:text="道琼斯指收益率 "
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:id="@+id/my_month_vs_dqs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="---"
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="，跑赢该指数 "
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:id="@+id/my_month_vs_dqs_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="---"
+                android:textColor="@color/main_text_color"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="14sp"
+                android:text="纳斯达克收益率 "
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:id="@+id/my_month_vs_nsdq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="---"
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="，跑赢该指数 "
+                android:textColor="@color/main_text_color"/>
+            <TextView
+                android:id="@+id/my_month_vs_nsdq_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="---"
+                android:textColor="@color/main_text_color"/>
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

@@ -8,7 +8,7 @@
     android:background="@color/main_bg"
     tools:context=".SerachActivity">
 
-    <com.example.rui.mystock.keyboard.KeyboardEditText
+    <com.chandler.red.mystock.keyboard.KeyboardEditText
         android:id="@+id/et_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,6 +27,13 @@
         android:background="@color/main_green_color"
         android:layout_margin="5dp"
         android:layout_height="1dp"/>
+
+    <ListView
+        android:id="@+id/search_history_list"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+    </ListView>
 
     <include layout="@layout/search_item_header"/>
 

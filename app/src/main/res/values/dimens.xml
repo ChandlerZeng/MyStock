@@ -3,7 +3,10 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="dialog_width">200dp</dimen>
+    <dimen name="dialog_width2">250dp</dimen>
     <dimen name="dialog_height">150dp</dimen>
+    <dimen name="dialog_height2">200dp</dimen>
     <dimen name="default_divider_height">0.5dp</dimen>
     <dimen name="default_divider_padding">4dp</dimen>
+    <dimen name="default_grid_divider_padding">1dp</dimen>
 </resources>

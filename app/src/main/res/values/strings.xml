@@ -2,12 +2,22 @@
     <string name="app_name">Mystock</string>
     <string name="main_page">首页</string>
     <string name="main_my">我的</string>
+    <string name="login">登陆</string>
+    <string name="search">搜索</string>
+    <string name="register">注册</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="exchange">交易</string>
+    <string name="my_info">个人信息</string>
+    <string name="photo_select">选择照片</string>
+    <string name="photo_search">搜索图片</string>
 
     // Localized
     <string name="action_settings">设置</string>
     <string name="action_delete">删除</string>
     <string name="action_create">生成数据</string>
     <string name="action_search">搜索</string>
+    <string name="action_done">确定</string>
+    <string name="action_change">切换</string>
     <string name="action_refresh">刷新</string>
     <string name="action_min_k">分时</string>
     <string name="action_daily_k">日K</string>

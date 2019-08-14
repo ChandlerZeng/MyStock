@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_bg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg">
+        <EditText
+            android:id="@+id/et_search"
+            android:hint="请输入关键词搜索图片"
+            android:textColor="@color/main_text_color"
+            android:layout_margin="5dp"
+            android:paddingLeft="5dp"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+
+        <com.github.jdsjlzx.recyclerview.LRecyclerView
+            android:id="@+id/photo_grid"
+            android:layout_below="@id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.github.jdsjlzx.recyclerview.LRecyclerView>
+
+
+        <ListView
+            android:id="@+id/search_history_list"
+            android:layout_width="300dp"
+            android:layout_below="@id/et_search"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </RelativeLayout>
+
+
+</LinearLayout>

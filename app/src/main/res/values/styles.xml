@@ -6,12 +6,24 @@
         <item name="android:textAllCaps">false</item>
     </style>
 
+    <style name="transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowDisablePreview">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
     <!-- 应用启动页(StartingWindow)的theme -->
     <style name="AppTheme.StartingWindowTheme" parent="AppTheme">
         <!-- 可以设置成纯颜色（设置一个和Activity UI相似的背景） -->
         <!--<item name="android:windowBackground">@color/startingwindow_bgcolor</item>-->
         <!--也可以设置成一张图片 -->
         <item name="android:windowBackground">@drawable/huiqiao2</item>
+    </style>
+    <style name="AppTheme.ActivityTheme" parent="AppTheme">
+        <!-- 可以设置成纯颜色（设置一个和Activity UI相似的背景） -->
+        <!--<item name="android:windowBackground">@color/startingwindow_bgcolor</item>-->
+        <!--也可以设置成一张图片 -->
+        <item name="android:windowBackground">@color/main_bg</item>
     </style>
     <!--自定义键盘中股票代码button style-->
     <style name="style_stock_key">
@@ -42,6 +54,24 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">0.49dp</item>
         <item name="android:background">@color/main_bg_grey</item>
+    </style>
+
+    <style name="CustomProgressDialog" parent="@android:style/Theme.Dialog">
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否显示title -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置dialog的背景 -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 用来控制灰度的值，当为1时，界面除了我们的dialog内容是高亮显示的，dialog以外的区域是黑色的，完全看不到其他内容，系统的默认值是0.5 -->
+        <item name="android:backgroundDimAmount">0.2</item>
+        <!-- 是否模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
     </style>
 
 </resources>

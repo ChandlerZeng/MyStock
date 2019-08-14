@@ -10,15 +10,6 @@
     android:background="@color/main_bg"
     tools:context=".activity.LoginActivity">
 
-    <Spinner
-        android:id="@+id/spinner_name"
-        android:layout_margin="10dp"
-        android:padding="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="45dp">
-
-    </Spinner>
-
     <EditText
         android:id="@+id/et_phone"
         android:layout_width="match_parent"
@@ -32,6 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:inputType="textPassword"
         android:hint="请输入密码"
         android:textColor="@color/main_text_color"
         android:textColorHint="@color/main_bg_grey"/>
@@ -45,4 +37,23 @@
         android:textSize="17sp"
         android:layout_margin="10dp"
         android:background="@drawable/shape_btn_red_selector"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/main_bg_orange"
+            android:text="注册"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tv_forget_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/main_bg_orange"
+            android:text="忘记密码?" />
+    </LinearLayout>
 </LinearLayout>

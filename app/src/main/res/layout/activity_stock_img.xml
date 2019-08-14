@@ -23,6 +23,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
         <TextView
             android:id="@+id/stock_id"
             android:textSize="15sp"
@@ -44,6 +49,21 @@
             android:layout_height="wrap_content"
             android:textColor="@color/main_text_color"
             android:padding="2dp"/>
+    </LinearLayout>
+        <TextView
+            android:textColor="@color/main_text_color"
+            android:id="@+id/tv_exchange"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text = "交易"
+            android:background="@drawable/selector_btn_background"
+            android:layout_height="wrap_content" />
     </LinearLayout>
     <LinearLayout
         android:layout_margin="10dp"
@@ -92,6 +112,7 @@
     <ImageView
         android:id="@+id/image_view"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_margin="10dp"
+        android:layout_height="300dp"
         android:scaleType="fitXY"/>
 </LinearLayout>

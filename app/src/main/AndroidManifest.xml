@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.rui.mystock">
+    package="com.chandler.red.mystock">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name=".App"
+        android:name="com.chandler.red.mystock.App"
         android:allowBackup="true"
         android:icon="@mipmap/logo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme.StartingWindowTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="com.chandler.red.mystock.MainActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:windowSoftInputMode="adjustUnspecified|stateHidden" />
-        <activity android:name=".StockImgActivity" />
+        <activity android:name="com.chandler.red.mystock.StockImgActivity" />
         <activity
-            android:name=".SerachActivity"
+            android:name="com.chandler.red.mystock.SerachActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:label="@string/app_name"
+            android:label="@string/search"
             android:windowSoftInputMode="adjustUnspecified|stateHidden" />
         <activity
-            android:name=".activity.Main2Activity"
+            android:name="com.chandler.red.mystock.activity.Main2Activity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:windowSoftInputMode="adjustUnspecified|stateHidden">
@@ -38,16 +40,43 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.ExchangeActivity"
+            android:name="com.chandler.red.mystock.activity.ExchangeActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:label="@string/app_name"
+            android:label="@string/exchange"
+            android:launchMode="singleTask"
             android:windowSoftInputMode="adjustUnspecified|stateHidden" />
         <activity
-            android:name=".activity.BuySearchActivity"
+            android:name="com.chandler.red.mystock.activity.BuySearchActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:label="@string/app_name"
+            android:label="@string/search"
             android:windowSoftInputMode="adjustUnspecified|stateHidden" />
-        <activity android:name=".activity.LoginActivity"></activity>
+        <activity
+            android:name="com.chandler.red.mystock.activity.LoginActivity"
+            android:label="@string/login" />
+        <activity
+            android:name="com.chandler.red.mystock.activity.RegisterActivity"
+            android:label="@string/register" />
+        <activity
+            android:name="com.chandler.red.mystock.activity.ForgetPwdActivity"
+            android:label="@string/forget_pwd" />
+        <activity
+            android:name="com.chandler.red.mystock.activity.ImageShowActivity"
+            android:theme="@style/transparent" />
+        <activity
+            android:name="com.chandler.red.mystock.activity.MyInfoActivity"
+            android:label="@string/my_info" />
+        <activity
+            android:name="com.chandler.red.mystock.activity.PhotoSelectActivity"
+            android:label="@string/photo_select" />
+        <activity
+            android:name="com.chandler.red.mystock.imageloader.ImagePickActivity"
+            android:label="@string/photo_select"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name="com.chandler.red.mystock.activity.SearchImagesActivity"
+            android:label="@string/photo_search"
+            android:theme="@style/AppTheme.ActivityTheme" />
+        <activity android:name="com.chandler.red.mystock.activity.FullScreenActivity"></activity>
     </application>
 
 </manifest>

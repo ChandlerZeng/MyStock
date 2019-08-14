@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -50,7 +51,7 @@
                     android:layout_marginTop="2dp"
                     android:textStyle="bold"
                     android:background="@drawable/txt_border_blue_selector"/>
-                <com.example.rui.mystock.keyboard.KeyboardEditText
+                <com.chandler.red.mystock.keyboard.KeyboardEditText
                     android:id="@+id/et_value"
                     android:layout_width="0dp"
                     android:layout_height="41dp"
@@ -82,6 +83,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
+                android:id="@+id/today_value"
+                android:text="当日--"
+                android:layout_below="@id/value_layout"
+                android:layout_centerInParent="true"
+                android:textColor="@color/main_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
                 android:id="@+id/max_value"
                 android:text="涨停--"
                 android:layout_below="@id/value_layout"
@@ -107,7 +116,7 @@
                     android:text=" — "
                     android:textStyle="bold"
                     android:background="@drawable/txt_border_blue_selector"/>
-                <com.example.rui.mystock.keyboard.KeyboardEditText
+                <com.chandler.red.mystock.keyboard.KeyboardEditText
                     android:id="@+id/et_count"
                     android:layout_width="0dp"
                     android:layout_height="41dp"
@@ -207,11 +216,71 @@
             
         </ListView>
     </LinearLayout>
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycle_view"
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/main_bg_black_light"/>
+    <LinearLayout
+        android:id="@+id/my_operate_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/hold_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:clickable="true"
+            android:background="@drawable/text_row_bg"
+            android:gravity="center"
+            android:text="市值"
+            android:textColor="@color/main_text_color"/>
+        <TextView
+            android:id="@+id/hold_profit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:clickable="true"
+            android:background="@drawable/text_row_bg"
+            android:gravity="center"
+            android:text="盈亏"
+            android:textColor="@color/main_text_color"/>
+        <TextView
+            android:id="@+id/hold_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:clickable="true"
+            android:background="@drawable/text_row_bg"
+            android:gravity="center"
+            android:text="持仓/可用"
+            android:textColor="@color/main_text_color"/>
+        <TextView
+            android:id="@+id/hold_cost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:clickable="true"
+            android:background="@drawable/text_row_bg"
+            android:gravity="center"
+            android:text="成本/现价"
+            android:textColor="@color/main_text_color"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/main_bg_grey"/>
+    <ListView
+        android:id="@+id/sell_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingBottom="15dp">
-    </android.support.v7.widget.RecyclerView>
+    </ListView>
 </LinearLayout>
-</ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/DragImageDemo/DragImageDemo.iml" filepath="$PROJECT_DIR$/DragImageDemo/DragImageDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DragPhotoView/DragPhotoView.iml" filepath="$PROJECT_DIR$/DragPhotoView/DragPhotoView.iml" />
       <module fileurl="file://$PROJECT_DIR$/LRecyclerview_library/LRecyclerview_library.iml" filepath="$PROJECT_DIR$/LRecyclerview_library/LRecyclerview_library.iml" />
       <module fileurl="file://$PROJECT_DIR$/Mystock-master.iml" filepath="$PROJECT_DIR$/Mystock-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />

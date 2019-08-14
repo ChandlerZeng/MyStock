@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_grey"
+    android:orientation="vertical">
+    <TextView
+        android:textColor="@color/main_text_color"
+        android:id="@+id/tv_position"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="图片位置"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_bg"/>
+    <TextView
+        android:textColor="@color/main_text_color"
+        android:id="@+id/tv_save"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:background="@drawable/top_text_row_bg"
+        android:text="保存图片"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+</LinearLayout>

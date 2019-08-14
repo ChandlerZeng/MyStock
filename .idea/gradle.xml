@@ -8,6 +8,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/DragImageDemo" />
+            <option value="$PROJECT_DIR$/DragPhotoView" />
             <option value="$PROJECT_DIR$/LRecyclerview_library" />
             <option value="$PROJECT_DIR$/app" />
           </set>

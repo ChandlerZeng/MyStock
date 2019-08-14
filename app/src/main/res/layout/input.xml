@@ -11,7 +11,7 @@
         android:orientation="horizontal"
         android:visibility="gone">
         <!--股票代码-->
-        <com.example.rui.mystock.keyboard.MultiKeyboardView
+        <com.chandler.red.mystock.keyboard.MultiKeyboardView
             android:id="@+id/keyboard_stock_code"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
             app:labelTextSize="19sp"
             app:specialLabelTextSize="19sp" />
         <!-- 普通数字键盘样式 -->
-        <com.example.rui.mystock.keyboard.MultiKeyboardView
+        <com.chandler.red.mystock.keyboard.MultiKeyboardView
             android:id="@+id/keyboard_stock"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
     </LinearLayout>
 
     <!-- 字母键盘样式 -->
-    <com.example.rui.mystock.keyboard.MultiKeyboardView
+    <com.chandler.red.mystock.keyboard.MultiKeyboardView
         android:id="@+id/keyboard_qwer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
         app:keyboardViewType="1"
         app:specialLabelTextSize="16sp" />
     <!--普通数字键盘-->
-    <com.example.rui.mystock.keyboard.MultiKeyboardView
+    <com.chandler.red.mystock.keyboard.MultiKeyboardView
         android:id="@+id/keyboard_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
