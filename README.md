@@ -1,7 +1,7 @@
 ### Mystock
 * * *
 一个实时的股票安卓应用程序,欢迎扫码体验：  
-<img src="https://github.com/ChandlerZeng/MyStock/blob/master/images/appdebug.PNG">  
+<img src="https://github.com/ChandlerZeng/MyStock/blob/master/images/appdebug.png">  
 目前支持以下功能：  
 1.生成数据，抓取A股sina股票数据  
 <img src="https://github.com/ChandlerZeng/MyStock/blob/master/images/data.PNG" height="450">  
@@ -22,7 +22,7 @@
 * * *
 
 #### 觉得项目不错的，欢迎star。如果觉得项目对你有所帮助也可以请作者喝杯咖啡。  
-       <img src="https://github.com/ChandlerZeng/MyStock/blob/master/images/pay.PNG">  
+<img src="https://github.com/ChandlerZeng/MyStock/blob/master/images/pay.png">  
        
        
        
