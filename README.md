@@ -22,7 +22,7 @@
 * * *
 
 #### 觉得项目不错的，欢迎star。如果觉得项目对你有所帮助也可以请作者喝杯咖啡。  
-<img src="https://github.com/ChandlerZeng/MyStock/blob/master/images/pay.png">  
+<img src="https://github.com/ChandlerZeng/MyStock/blob/master/images/pay.png" height="450">  
        
        
        
