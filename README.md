@@ -6,6 +6,7 @@
 2.添加、删除、置顶自选的股票
 3.点击某只股票可查看股票分时、日K、周K、月K图
 4.买入、卖出等模拟交易操作。
+![Image text](https://github.com/ChandlerZeng/MyStock/blob/master/images/buy.PNG)
 5.查看持仓、历史等股票数据。
 6.微信风格的图片查看操作，可以设置本地图片和网络图片作为头像，网络图片抓取百度数据。
 
