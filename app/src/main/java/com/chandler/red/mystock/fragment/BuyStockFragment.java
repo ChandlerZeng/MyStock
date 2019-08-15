@@ -515,6 +515,7 @@ public class BuyStockFragment extends LazyLoadFragment {
                 if (resultCode == RESULT_OK) {
                     number = data.getStringExtra("number");
                     name = data.getStringExtra("name");
+                    refreshViewAfteriItemClicked();
                     queryByNumber();
                 }
                 break;
