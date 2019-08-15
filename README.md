@@ -17,7 +17,7 @@
 7.查看持仓、历史等股票数据。  
 <img src="https://github.com/ChandlerZeng/MyStock/blob/master/images/hold.PNG" height="450"><img src="https://github.com/ChandlerZeng/MyStock/blob/master/images/history.PNG" height="450">  
 8.微信风格的图片查看操作，可以设置本地图片和网络图片作为头像，网络图片抓取百度数据。  
-<img src="https://github.com/ChandlerZeng/MyStock/blob/master/images/photo.PNG" height="450">  
+<img src="https://github.com/ChandlerZeng/MyStock/blob/master/images/photo.JPG" height="450">  
 
 * * *
 
