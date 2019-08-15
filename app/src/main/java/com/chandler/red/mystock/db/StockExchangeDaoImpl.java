@@ -79,9 +79,6 @@ public class StockExchangeDaoImpl implements StockExchangeDao {
             int type = cursor.getInt(2);
             long time = cursor.getLong(3);
             double exeValue =  cursor.getDouble(4);
-            if(type==1){
-                count = count - 2*count;
-            }
             HoldStock stock = new HoldStock();
             stock.setNumber(number);
             stock.setCount(count);
@@ -98,6 +95,7 @@ public class StockExchangeDaoImpl implements StockExchangeDao {
         Cursor cursor = db.rawQuery(sql,null);
         List<HoldsBean> list = new ArrayList<>();
         while (cursor.moveToNext()){
+            if(cursor.getInt(1)==0)continue;
             HoldsBean holdsBean = new HoldsBean();
             holdsBean.setNumber(cursor.getString(0));
             holdsBean.setCount(cursor.getInt(1));

@@ -17,7 +17,7 @@ public class MySqlHelper extends SQLiteOpenHelper {
                 "topTime integer)";
         public static final String CREATE_EXCHANGE_STOCK = "create table t_exe_stock (" +
 
-            "exe_id varchar(20) primary key,acc_id integer,number varchar(10),exe_value decimal(10,2), exe_mount integer,exe_time integer,exe_type integer)";
+            "exe_id varchar(20) primary key,acc_id integer,number varchar(10),exe_value decimal(10,2), exe_mount integer,exe_time integer,exe_type integer,name varchar(10))";
 
         public static final String CREATE_ACCOUNT_STOCK = "create table t_acc_stock (" +
 
@@ -61,6 +61,11 @@ public class MySqlHelper extends SQLiteOpenHelper {
         Log.i(TAG,"before excSql");
 
         db.execSQL(CREATE_STOCK);
+        db.execSQL(CREATE_EXCHANGE_STOCK);
+        db.execSQL(CREATE_ACCOUNT_STOCK);
+        db.execSQL(CREATE_SEARCH_STOCK);
+        db.execSQL(CREATE_SEARCH_IMAGE);
+        db.execSQL(CREATE_MONTH_STOCK);
 
         Log.i(TAG,"after excSql");
     }
