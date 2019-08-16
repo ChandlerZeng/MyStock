@@ -279,8 +279,7 @@
     <ListView
         android:id="@+id/sell_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingBottom="15dp">
+        android:layout_height="match_parent">
     </ListView>
 </LinearLayout>
 </android.support.v4.widget.SwipeRefreshLayout>

@@ -329,7 +329,7 @@ public class BuyStockFragment extends LazyLoadFragment {
             setTextColor(todayValue,dayProfit);
         }
         int dcount = (int) (freeMoney / curValue / 100);
-        maxCount = dcount * 100;
+        maxCount = dcount<0?0:dcount * 100;
         canBuyCount.setText("可买" + maxCount + "股");
 
         double increase = curValue - yesValue;
@@ -499,8 +499,13 @@ public class BuyStockFragment extends LazyLoadFragment {
             Toast.makeText(getActivity(), "请输入购买的价格", Toast.LENGTH_SHORT).show();
             return false;
         }
-        if (TextUtils.isEmpty(etCount.getText().toString()) || "0".equals(etCount.getText().toString())) {
+        if (TextUtils.isEmpty(etCount.getText().toString())) {
             Toast.makeText(getActivity(), "请输入购买的数量", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        int c = Integer.parseInt(etCount.getText().toString());
+        if (c<=0) {
+            Toast.makeText(getActivity(), "购买数量无效", Toast.LENGTH_SHORT).show();
             return false;
         }
         return true;

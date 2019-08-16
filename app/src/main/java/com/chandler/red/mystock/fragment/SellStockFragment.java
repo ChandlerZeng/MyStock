@@ -501,8 +501,13 @@ public class SellStockFragment extends LazyLoadFragment {
             Toast.makeText(getActivity(), "请输入卖出的价格", Toast.LENGTH_SHORT).show();
             return false;
         }
-        if (TextUtils.isEmpty(etCount.getText().toString()) || "0".equals(etCount.getText().toString())) {
+        if (TextUtils.isEmpty(etCount.getText().toString())) {
             Toast.makeText(getActivity(), "请输入卖出的数量", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        int c = Integer.parseInt(etCount.getText().toString());
+        if (c<=0) {
+            Toast.makeText(getActivity(), "卖出数量无效", Toast.LENGTH_SHORT).show();
             return false;
         }
         return true;
