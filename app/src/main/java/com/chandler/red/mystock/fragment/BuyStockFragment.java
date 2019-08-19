@@ -234,20 +234,22 @@ public class BuyStockFragment extends LazyLoadFragment {
     }
 
     public void querySinaStocks() {
-        // Instantiate the RequestQueue
+        // Volley作为网络请求
         if (number == null || number.equals("")) return;
         if (queue == null)
             queue = Volley.newRequestQueue(getActivity());
+        //新浪股票API，url类似：http://hq.sinajs.cn/list=sh600000,sh600536
         String url = "http://hq.sinajs.cn/list=" + number;
-        //http://hq.sinajs.cn/list=sh600000,sh600536
 
-        // Request a string response from the provided URL.
+        //实例化一个 StringRequest作为网络请求
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
+                        //解析请求的数据
                         responseToStocks(response);
                         if (stockArray != null && stockArray.length >= 30)
+                            //刷新UI
                             refreshView();
                     }
                 },
