@@ -48,10 +48,10 @@ public class MainFragment extends BaseFragment implements View.OnClickListener{
 
     private static HashSet<String> StockHeadIds_ = new HashSet();
     private static List<String> StockIds_ = new ArrayList<>();
-    private final static int MAX_SH = 604000;
-    private final static int MAX_SHKC = 688500;
-    private final static int MAX_SZ = 3000;
-    private final static int MAX_CH = 302000;
+    private final static int MAX_SH = 605000;
+    private final static int MAX_SHKC = 689500;
+    private final static int MAX_SZ = 4000;
+    private final static int MAX_CH = 303000;
     private TextView tvDate;
     private Timer timer;
     RecyclerView recyclerView;

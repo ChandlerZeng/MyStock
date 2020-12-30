@@ -31,14 +31,20 @@ public class HttpManager {
     }
 
     public void startStringRequest(StringRequest stringRequest){
-        if(queue==null)
-        queue = Volley.newRequestQueue(context);
-        queue.add(stringRequest);
-//        queue.start();
+        if(queue==null){
+            queue = Volley.newRequestQueue(context);
+            queue.add(stringRequest);
+        }else {
+            queue.add(stringRequest);
+//            queue.start();
+        }
+
     }
 
     public void stopQueue(){
-        if(queue!=null)
-        queue.stop();
+        if(queue!=null){
+            queue.stop();
+            queue = null;
+        }
     }
 }
