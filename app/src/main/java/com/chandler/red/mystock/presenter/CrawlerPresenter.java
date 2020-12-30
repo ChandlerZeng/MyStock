@@ -77,7 +77,7 @@ public class CrawlerPresenter implements Presenter{
                 httpResponseView.onError(error.getMessage());
             }
         });
-        Log.i("Crawler","originUrl:"+stringRequest.getOriginUrl());
+//        Log.i("Crawler","originUrl:"+stringRequest.getOriginUrl());
         Log.i("Crawler","Url:"+stringRequest.getUrl());
         manager.startStringRequest(stringRequest);
     }

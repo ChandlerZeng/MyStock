@@ -2,14 +2,18 @@
 
 buildscript {
     repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
         jcenter()
         google()
         maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.android.tools.build:gradle:3.6.1'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
-        classpath 'com.jakewharton:butterknife-gradle-plugin:9.0.0-SNAPSHOT'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:9.0.0-rc2'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -18,6 +22,10 @@ buildscript {
 
 allprojects {
     repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
         jcenter()
         google()
         maven { url "https://oss.sonatype.org/content/repositories/snapshots" }

@@ -84,7 +84,7 @@ public class StockPresenter<T> implements Presenter{
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         httpResponseView.onError(error.getMessage());
-                        Log.e(MySqlHelper.TAG,"请求数据失败:"+list);
+                        Log.e(MySqlHelper.TAG,"请求数据失败:"+list+ error.getMessage());
                     }
                 });
         manager.startStringRequest(stringRequest);
@@ -112,7 +112,7 @@ public class StockPresenter<T> implements Presenter{
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         httpResponseView.onError(error.getMessage());
-                        Log.e(MySqlHelper.TAG,"请求数据失败:"+list);
+                        Log.e(MySqlHelper.TAG,"请求数据失败:"+list+ error.getMessage());
                     }
                 });
         manager.startStringRequest(stringRequest);
@@ -134,7 +134,7 @@ public class StockPresenter<T> implements Presenter{
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         httpResponseView.onError(error.getMessage());
-                        Log.e(MySqlHelper.TAG,"请求数据失败:"+list);
+                        Log.e(MySqlHelper.TAG,"请求数据失败:"+list+ error.getMessage());
                     }
                 });
         manager.startStringRequest(stringRequest);
@@ -156,7 +156,7 @@ public class StockPresenter<T> implements Presenter{
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         httpResponseView.onError(error.getMessage());
-                        Log.e(MySqlHelper.TAG,"请求数据失败:"+list);
+                        Log.e(MySqlHelper.TAG,"请求数据失败:"+list+ error.getMessage());
                     }
                 });
         manager.startStringRequest(stringRequest);

@@ -237,9 +237,9 @@ public class MainFragment extends BaseFragment implements View.OnClickListener{
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                handler.sendEmptyMessageAtTime(2,500);
+                handler.sendEmptyMessageAtTime(2,1000);
             }
-        }, 0, 29500); // 30 seconds
+        }, 0, 29000); // 30 seconds
     }
 
     @Override

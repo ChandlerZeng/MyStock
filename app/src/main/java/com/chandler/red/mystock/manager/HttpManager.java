@@ -34,7 +34,7 @@ public class HttpManager {
         if(queue==null)
         queue = Volley.newRequestQueue(context);
         queue.add(stringRequest);
-        queue.start();
+//        queue.start();
     }
 
     public void stopQueue(){
