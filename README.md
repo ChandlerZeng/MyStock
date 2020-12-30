@@ -3,6 +3,7 @@
 一个实时的股票安卓应用程序,欢迎扫码体验：  
 
 <img src="https://github.com/ChandlerZeng/MyStock/blob/master/images/appdebug.png">  
+下载链接：http://d.6short.com/1hx4
 
 目前支持以下功能：  
 1.生成数据，抓取A股sina股票数据保存本地数据库  
